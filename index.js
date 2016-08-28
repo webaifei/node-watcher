@@ -5,13 +5,13 @@ const path = require('path');
 const fs = require('fs');
 
 //监听文件夹中的变化
-function watcher(destPath, callback) {
+function watch(destPath, callback) {
   var _res = {};
 
   if (!destPath) {
     console.error('an destnation path needed!');
     process.exit(0)
-  } 
+  }
 
   fs.watch(destPath, function(event, filename) {
 
@@ -71,4 +71,4 @@ function fileStat(filename) {
   return res;
 }
 
-module.exports = watcher;
+module.exports = watch;

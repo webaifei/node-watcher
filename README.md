@@ -1,4 +1,4 @@
-## node-watcher
+## node-detector
 
 > 监听文件夹中的变化
 
@@ -11,9 +11,9 @@ nodejs 原生的fs.watch api监听事件中拿到的事件类型只有两种：
 > node-watcher 使用方法
 
 ```
-const watcher = require('node-wather')
+const watch = require('node-detector')
 
-watcher(folderPath, function (change){
+watch(folderPath, function (change){
   console.log(changes);
 })
 

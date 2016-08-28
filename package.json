@@ -1,5 +1,5 @@
 {
-  "name": "node-watcher",
+  "name": "node-detector",
   "version": "1.0.0",
   "description": "watch changes of an special folder ",
   "main": "index.js",
