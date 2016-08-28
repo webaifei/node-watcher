@@ -14,7 +14,6 @@ function watch(destPath, callback) {
   }
 
   fs.watch(destPath, function(event, filename) {
-
     var filePath = path.join(destPath, filename),
       ext = path.extname(filename),
       stat = fileStat(filePath),
@@ -37,8 +36,7 @@ function watch(destPath, callback) {
       }
     } else if (event == 'rename' && isExist) {
         // 新增的情况
-      if (stat.birthtime.getTime() == stat.mtime.getTime() && stat.birthtime
-        .getTime() == stat.ctime.getTime()) {
+      if (stat.birthtime.getTime() == stat.mtime.getTime() ) {
         _res = {
           fileName: filename,
           curFileName: filename,
