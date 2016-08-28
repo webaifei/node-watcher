@@ -1,0 +1,14 @@
+{
+  "name": "file-watch",
+  "version": "1.0.0",
+  "description": "watch changes of an special file ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "file-watch"
+  ],
+  "author": "zhangaifei",
+  "license": "ISC"
+}
