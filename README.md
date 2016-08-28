@@ -1,5 +1,6 @@
 ## node-detector
 
+<p style="color:red">this is deprecated! use (chokidar)[https://github.com/paulmillr/chokidar] instead.</p>
 > 监听文件夹中的变化
 
 nodejs 原生的fs.watch api监听事件中拿到的事件类型只有两种：
